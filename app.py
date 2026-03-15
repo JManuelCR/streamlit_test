@@ -29,5 +29,3 @@ start_button = st.button('Ejecutar')
 
 if start_button:
     st.write(f'Experimento con {number_of_trails} intentos en curso.')
-
-st.write('Esta aplicación aún no es funcional. EN construcción.')
