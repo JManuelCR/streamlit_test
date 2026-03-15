@@ -36,7 +36,7 @@ start_button = st.button('Ejecutar')
 if start_button:
     st.write(f'Experimento con {number_of_trails} intentos en curso.')
     st.session_state['experiment_no'] += 1
-    mean = toss_coin(number_of_trails))
+    mean = toss_coin(number_of_trails)
     st.session_state['df_experiment_results'] = pd.concat([
         st.session_sate['df_experiment_results'],
         pd.DtaFrame(data=[[st.session_state['experiment_no'],
