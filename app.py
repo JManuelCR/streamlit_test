@@ -11,7 +11,9 @@ if 'df_experiment_results' not in st.session_state:
 
 st.header('Lanzar una moneda')
 
-chart = st.line_chart([0.5])
+chart_placeholder = st.empty()
+history = [0.5]
+
 
 def toss_coin(n):
         trial_outcomes = scipy.stats.bernoulli.rvs(p=0.5, size=n)
@@ -26,7 +28,8 @@ def toss_coin(n):
                 if r == 1:
                     outcome_1_count += 1
                 mean = outcome_1_count / outcome_no
-                chart.add_rows([mean])
+                history.append(mean)
+                chart_placeholder.line_chart(history)
                 time.sleep(0.005)
         return mean
 
