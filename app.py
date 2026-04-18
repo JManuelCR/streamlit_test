@@ -27,7 +27,7 @@ def toss_coin(n):
                     outcome_1_count += 1
                 mean = outcome_1_count / outcome_no
                 chart.add_rows([mean])
-                time.spleep(0.005)
+                time.sleep(0.005)
         return mean
 
 number_of_trails = st.slider('¿Número de intentos?', 1,1000,10)
