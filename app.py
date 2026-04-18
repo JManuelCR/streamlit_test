@@ -39,7 +39,7 @@ if start_button:
     mean = toss_coin(number_of_trails)
     st.session_state['df_experiment_results'] = pd.concat([
         st.session_state['df_experiment_results'],
-        pd.DtaFrame(data=[[st.session_state['experiment_no'],
+        pd.DataFrame(data=[[st.session_state['experiment_no'],
                            number_of_trails,
                            mean]],
                     columns=['no', 'iteraciones', 'media'])
