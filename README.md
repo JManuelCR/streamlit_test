@@ -2,6 +2,8 @@
 
 This project is an interactive web application built with **Streamlit** that simulates coin toss experiments to demonstrate the **Law of Large Numbers**. It visualizes in real-time how the cumulative mean of outcomes converges to the theoretical probability of 0.5 as the number of trials increases.
 
+## 👀 View porject deploy
+[https://streamlit-test-bz3v.onrender.com](https://streamlit-test-bz3v.onrender.com)
 ## 🚀 Features
 * **Real-time Visualization:** Uses `st.empty` and `line_chart` to animate the convergence of the mean during the simulation.
 * **Dynamic Simulation:** Adjustable number of trials (1 to 1,000) using an interactive slider.
@@ -31,5 +33,5 @@ As the number of trials ($n$) grows, the average of the results ($\bar{X}_n$) is
 
 ### 1. Clone the Repository
 ```bash
-git clone [https://github.com/JManuelCR/coin-toss-simulation.git](https://github.com/JManuelCR/coin-toss-simulation.git)
-cd coin-toss-simulation
+git clone git@github.com:JManuelCR/streamlit_test.git
+cd streamlit_test
